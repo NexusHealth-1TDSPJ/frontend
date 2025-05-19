@@ -27,6 +27,15 @@ body{
     color: black;
     padding: 20px;
     background-color: white;
-    border: 3px;
+    border: 1px solid black;
+    width: 700px;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 24px;
+    transition: 1s;
     
+}
+.botao:hover {
+  background-color: #4d9fa9;
+  cursor: pointer;
 }
