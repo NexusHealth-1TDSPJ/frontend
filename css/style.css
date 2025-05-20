@@ -67,3 +67,57 @@ footer{
     width: 100%;
     height: 50px;
 }
+
+.sessao-inicial {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.sessao-inicial img {
+  max-width: 40%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.sessao-inicial.texto {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+header nav{
+    justify-content: center;
+    font-size: 24px;
+    display: flex;
+    gap: 20px;
+}
+
+.sessao-final {
+  display: flex;
+  flex-direction: row; 
+  align-items: flex-start; 
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.sessao-final img {
+  max-width: 45%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.sessao-final.texto {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.sessao-final.texto p{
+    text-align: right;
+}
