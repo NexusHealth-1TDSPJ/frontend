@@ -63,3 +63,38 @@ main{
         padding: 0 10px;
     }
 }
+
+@media (max-width: 425px) {
+    .sessao-inicial img, .sessao-final img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    .sessao-inicial, .sessao-final {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .texto{
+        padding: 0 15px;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 0;
+    }
+
+    .botao_nav{
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        font-size: 1rem;
+    }
+}
