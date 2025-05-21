@@ -45,3 +45,10 @@ nav ul li{
     cursor: pointer;
 }
 
+.barra_cabecalho {
+    background-color: #1077bd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
