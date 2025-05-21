@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/favicon.jpg">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/sobre.css">
+    <title>Sobre</title>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html"><img id="logo_nav" src="../img/favicon.jpg" alt="logo"></a></li>
+                <li><a href="./sobre.html" class="botao_nav">Sobre</a></li>
+                <li><a href="./ajuda.html" class="botao_nav">Ajuda </a></li>
+                <li><a href="#services" class="botao_nav">Perguntas</a></li>
+                <li><a href="./quem_somos.html" class="botao_nav">Quem somos</a></li>
+                <li><a href="./contato.html"  class="botao_nav">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2 class="sobre">Contato</h2>
+            <div>
+                <div>
+                    <form id="formContato">
+                        <fieldset>
+                            <legend>Dados Pessoais</legend>
+                            <div>
+                                <label for="idNome">Nome:</label>
+                                <input 
+                                type="text"
+                                name="nome"
+                                id="idNome"
+                                placeholder="Digite o seu nome"
+                                maxlength="100">
+                                <span id="spanNome">Dados incorretos</span>
+                            </div>
+                            <div>
+                                <label for="idEmail">Email:</label>
+                                <input 
+                                type="email"
+                                name="email"
+                                id="idEmail"
+                                placeholder="Digite o seu email"
+                                maxlength="50">
+                                <span id="spanEmail">Dados incorretos</span>
+                            </div>
+                            <div>
+                                <button type="submit" id="btnEnviar">Enviar</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+        
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Nexus Health. Todos direitos reservados.</p>
+    </footer>
+</body>
+
+</html>
