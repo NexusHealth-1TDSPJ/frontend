@@ -1,0 +1,60 @@
+.sobre {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 92px;
+}
+
+.sessao-inicial, .sessao-final {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.sessao-inicial img, .sessao-final img {
+    max-width: 40%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.sessao-inicial .texto, .sessao-final .texto {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sessao-final {
+    flex-direction: row;
+}
+
+.sessao-final .texto p {
+    text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+    .sessao-inicial, .sessao-final {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sessao-inicial img, .sessao-final img {
+        max-width: 80%;
+    }
+
+    .texto {
+        max-width: 90%;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
