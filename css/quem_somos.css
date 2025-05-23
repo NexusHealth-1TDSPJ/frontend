@@ -37,6 +37,44 @@ div h2{
     text-align: center;
 }
 
-.integrantesinfo erik{
-   text-align: center;
+.integrantesinfo h2 {
+    margin-bottom: 20px;
+}
+
+.integrantes-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.integrante {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.integrantesfoto {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.integrante h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.integrante p a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: #0077b5;
+}
+
+.integrante p a:hover {
+    text-decoration: underline;
 }
