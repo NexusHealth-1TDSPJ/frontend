@@ -1,12 +1,42 @@
 main{
     min-height: 84vh;
 }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
 
 .integrantesfoto{
     width: 200px;
+   
 }
+
 p{
     margin: 6px;
     margin-left: 3px;
     margin-right: 3px;
+}
+
+section h1{
+    text-align: center;
+    font-size: 32px;
+    color: #1077bd;
+    margin-bottom: 20px;
+}
+
+div h2{
+    text-align: center;
+    font-size: 22px;
+    color: #1077bd;
+    margin-bottom: 20px;
+}
+
+.introducao{
+    text-align: center;
+}
+
+.integrantesinfo erik{
+   text-align: center;
 }
