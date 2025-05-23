@@ -13,7 +13,7 @@ body {
 /* Título principal */
 .titulo {
     text-align: center;
-    font-size: 28px;
+    font-size: 22px;
     color: #1077bd;
     margin-bottom: 20px;
 }
@@ -44,6 +44,11 @@ body {
     border-radius: 5px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
     margin-top: 5px;
+}
+.titulofaq{
+    font-size: 40px;
+    text-align: center;
+    color: #1077bd;
 }
 
 /* Responsividade */
