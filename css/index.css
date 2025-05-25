@@ -1,3 +1,1 @@
-main{
-    min-height: 84vh;
-}
+h1,h2{margin-bottom:1rem;text-align:center;color:#1077bd}main{min-height:84vh;font-family:Arial,sans-serif}h1{font-size:2.5rem;margin-top:1rem}h2{font-size:2rem}
