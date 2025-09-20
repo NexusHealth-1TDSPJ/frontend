@@ -4,7 +4,6 @@ export default function Sobre() {
     document.title = "Sobre - Nexus Health";
     return(
         <main>
-            <img src={Fachada} alt="Fachada do Hospital" />
             <h1>Sobre o Nexus Health</h1>
             <section>
                 <div>
