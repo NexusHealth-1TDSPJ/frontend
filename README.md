@@ -13,21 +13,72 @@ Com uma interface interativa, o site permite que os usuários possam:
 - Inserir dados pessoais para obter suporte, facilitar o contato e o cadastro;
 
 ## Estrutura do Projeto
-O projeto está organizado na pasta **frontend**, com arquivos específicos de cada função:
-- css -> Apresenta o design e estilização das páginas do site.
-- img -> Inclui ícones e imagens utilizados dentro do projeto.
-- páginas -> Contém o diretório onde as páginas específicas do site:
-  - index.html -> Página inicial contendo um pequeno resumo da Nexus Health e botões com acesso às outras páginas.
-  - sobre.html -> Apresenta um pouco da história do Hospital das Clínicas.
-  - serviço.html -> Lista os institutos que os pacientes podem se consultar no hospital.
-  - quemsomos.html -> Exibe os integrantes da empresa com nome, RM e links do LinkedIn e GitHub.
-  - FAQ.html -> Inclui perguntas frequentes referentes à saúde, desde consultas presenciais até remotas e dúvidas sobre pré-consultas e pós-consultas.
-  - contato.html -> Página focada ao contato e suporte.
+```
+├── nexushealth/
+    ├── public/               # Contém arquivos estáticos que não são processados pelo Vite.
+    │                         # Eles são copiados para a raiz do diretório de build.
+    │
+    ├── src/                  # Diretório principal do código-fonte da aplicação.
+    │   ├── assets/           # Imagens, fontes e outros recursos.
+    │   ├── components/       # Componentes React reutilizáveis.
+    │   ├── pages/            # Componentes que representam as páginas da aplicação.
+    │   └── main.tsx          # Ponto de entrada principal da aplicação React.
+    │
+    ├── .eslint.config.js     # Arquivo de configuração para o ESLint.
+    ├── .gitignore            # Especifica arquivos e pastas a serem ignorados pelo Git.
+    ├── index.html            # Ponto de entrada HTML da aplicação.
+    ├── package.json          # Define os metadados do projeto e as dependências.
+    ├── tsconfig.json         # Arquivo de configuração principal do TypeScript.
+    ├── vite.config.ts        # Arquivo de configuração do Vite.
+    └── README.md             # Documentação do projeto. 
+```
+
+## Como rodar o projeto
+
+### 1. Clone o Repositório
+
+Primeiro, clone este repositório para o seu ambiente local usando o terminal:
+
+```bash
+git clone https://github.com/NexusHealth-1TDSPJ/frontend.git
+cd frontend
+cd nexushealth
+```
+### 2. Instale as dependências do projeto
+Dentro da pasta do projeto, instale todas as dependências necessárias utilizando o npm (ou o seu gerenciador de pacotes preferido):
+
+```bash
+npm install
+
+```
+Este comando irá ler o arquivo package.json e baixar todas as bibliotecas listadas (como React, Vite, Tailwind CSS, etc.).
+
+### 3. Execute o Projeto
+
+Após a instalação das dependências, inicie o servidor de desenvolvimento do Vite:
+
+```bash
+npm run dev
+```
+
+### 4. Acesse a Aplicação
+
+O terminal mostrará uma mensagem indicando que o servidor está rodando. Geralmente, a aplicação estará disponível no seguinte endereço:
+
+```
+http://localhost:5173
+```
+
+Abra o seu navegador e acesse essa URL para ver o projeto em execução!
 
 ## Tecnologias Utilizadas
 As tecnologias utilizadas no projeto foram: 
-- HTML - Estruturação das páginas existentes no site.
-- CSS - Design e estilização visual do projeto.
+
+![NPM](https://img.shields.io/badge/npm-CB3837?style=flat&logo=npm&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white)
 
 ## Integrantes do projeto
 - Erik Naoki Miyasato - RM: 565771
@@ -36,7 +87,3 @@ As tecnologias utilizadas no projeto foram:
 
 ## Link do repositório
 https://github.com/NexusHealth-1TDSPJ
-  
-                 
-
-
