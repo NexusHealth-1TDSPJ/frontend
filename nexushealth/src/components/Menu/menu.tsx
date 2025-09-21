@@ -2,13 +2,13 @@ import { Link } from "react-router-dom";
 
 export default function Menu() {
     return(
-        <nav>
-            <Link to="/">Home</Link>
-            <Link to="/sobre">Sobre</Link>
-            <Link to="/contato">Contato</Link>
-            <Link to="/servicos">Serviços</Link>
-            <Link to="/integrantes">Integrantes</Link>
-            <Link to="/perguntas">Perguntas Frequentes</Link>
+        <nav className="menu-nav">
+            <Link className="menu-link" to="/">Home</Link>
+            <Link className="menu-link" to="/sobre">Sobre</Link>
+            <Link className="menu-link" to="/contato">Contato</Link>
+            <Link className="menu-link" to="/servicos">Serviços</Link>
+            <Link className="menu-link" to="/integrantes">Integrantes</Link>
+            <Link className="menu-link" to="/perguntas">Perguntas Frequentes</Link>
         </nav>
     )
 }
