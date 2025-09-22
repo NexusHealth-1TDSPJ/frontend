@@ -2,7 +2,7 @@ import Fachada from "../../img/fachada-hc.jpg";
 import Medico from "../../img/medicos-hc.jpg"
 
 export default function Sobre() {
-    document.title = "Sobre - Nexus Health";
+    document.title = "Sobre";
     return(
         <main>
             <h1>Sobre o Nexus Health</h1>
