@@ -7,7 +7,7 @@ export default function Sobre() {
 
   return (
     <main className="fundo-sobre">
-      <h1 className="titulo-sobre">Sobre o Nexus Health</h1>
+      <h1 className="titulo-sobre">Sobre o HC</h1>
 
       <section className="secao-sobre">
         <div className="bloco-conteudo">

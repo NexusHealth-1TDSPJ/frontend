@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+.fundo-perguntas {
+  @apply p-8 flex justify-center;
+}
+
+.conteudo-perguntas {
+  @apply w-full max-w-3xl;
+}
+
+.titulo-perguntas {
+  @apply text-center text-3xl font-bold mb-8;
+}
+
+.subtitulo-perguntas {
+  @apply text-2xl font-semibold mb-4 text-center;
+}
+
+.bloco-pergunta {
+  @apply mb-4;
+}
+
+.item-pergunta {
+  @apply bg-blue-600 text-white px-6 py-4 mb-2 rounded-lg cursor-pointer hover:bg-[#a2ffe9] transition duration-300;
+}
+
+.texto-pergunta {
+  @apply font-semibold;
+}
+
+.resposta-pergunta {
+  @apply bg-white text-black px-6 py-4 rounded-lg mb-2;
+}
