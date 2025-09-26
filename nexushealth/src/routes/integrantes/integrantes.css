@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+.fundo-integrantes {
+  @apply bg-gray-50 py-8 px-4;
+}
+
+.introducao-integrantes {
+  @apply max-w-5xl mx-auto text-center mb-16;
+}
+
+.titulo-introducao {
+  @apply text-4xl font-bold text-gray-900 mb-4;
+}
+
+.texto-introducao {
+  @apply text-lg text-gray-700;
+}
+
+.paragrafo-introducao {
+  @apply mb-6;
+}
+
+.secao-equipe {
+  @apply max-w-5xl mx-auto;
+}
+
+.titulo-equipe {
+  @apply text-3xl font-semibold text-gray-900 text-center mb-12;
+}
+
+.bloco-integrante {
+  @apply flex flex-col items-center mb-12;
+}
+
+.foto-integrante {
+  @apply w-32 h-32 rounded-full mb-4 object-cover;
+}
+
+.nome-integrante {
+  @apply text-2xl font-medium text-gray-900 text-center;
+}
+
+.links-integrante {
+  @apply flex space-x-4 mt-2;
+}
+
+.link-social {
+  @apply text-blue-500 hover:underline;
+}
