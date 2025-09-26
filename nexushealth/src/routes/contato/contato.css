@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+.container-contato {
+  @apply max-w-md mx-auto mt-10 p-6 bg-white rounded-lg shadow-md;
+}
+
+.titulo-contato {
+  @apply text-2xl font-bold mb-4;
+}
+
+mensagem-sucesso {
+  @apply mb-4 p-2 bg-green-100 text-green-700 rounded;
+}
+
+.formulario-contato {
+  @apply flex flex-col gap-4;
+}
+
+.campo-input {
+  @apply w-full p-2 border rounded;
+}
+
+.campo-erro {
+  @apply border-red-500;
+}
+
+.campo-normal {
+  @apply border-gray-300;
+}
+
+.texto-erro {
+  @apply text-red-500 text-sm;
+}
+
+.secao-teleconsulta {
+  @apply mt-6;
+}
+
+.titulo-secao {
+  @apply text-lg font-semibold mb-2;
+}
+
+.pergunta-radio {
+  @apply font-medium;
+}
+
+.opcoes-radio {
+  @apply flex gap-4 mt-1;
+}
+
+.label-radio {
+  @apply flex items-center gap-1;
+}
+
+.botao-enviar {
+  @apply bg-blue-500 text-white p-2 rounded hover:bg-blue-600 transition;
+}
