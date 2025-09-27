@@ -8,6 +8,7 @@ export default function Integrantes() {
 
   return (
     <main className="fundo-integrantes">
+      {/* Seção de introdução */}
       <section className="introducao-integrantes">
         <h1 className="titulo-introducao">Quem somos</h1>
         <div className="texto-introducao">
@@ -32,30 +33,36 @@ export default function Integrantes() {
       <section className="secao-equipe">
         <h2 className="titulo-equipe">Nossa equipe</h2>
 
-        <div className="bloco-integrante">
-          <img src={Erik} alt="Foto de Erik" className="foto-integrante" />
-          <h3 className="nome-integrante">Erik Naoki Miyasato - RM: 56577 - 1TDSPJ</h3>
-          <div className="links-integrante">
-            <a href="http://linkedin.com/in/erik-miyasato-4b9062367" target="_blank" className="link-social">LinkedIn</a>
-            <a href="https://github.com/erikmiyasato" target="_blank" className="link-social">GitHub</a>
-          </div>
-        </div>
+        <div className="grade-integrantes">
 
-        <div className="bloco-integrante">
-          <img src={Hector} alt="Foto de Hector" className="foto-integrante" />
-          <h3 className="nome-integrante">Hector Salgado Soria - RM: 565498 - 1TDSPJ</h3>
-          <div className="links-integrante">
-            <a href="https://www.linkedin.com/in/hector-soria-76ab6726b/" target="_blank" className="link-social">LinkedIn</a>
-            <a href="https://github.com/Hectorsalgadoo" target="_blank" className="link-social">GitHub</a>
+          <div className="card-integrante">
+            <img src={Erik} alt="Foto de Erik" className="foto-integrante" />
+            <h2 className="nome-integrante">Erik Naoki Miyasato</h2>
+            <p className="descricao-integrante">RM: 565771 - 1TDSPJ</p>
+            <div className="links-integrante">
+              <a href="http://linkedin.com/in/erik-miyasato-4b9062367" target="_blank" className="link-social">LinkedIn</a>
+              <a href="https://github.com/erikmiyasato" target="_blank" className="link-social">GitHub</a>
+            </div>
           </div>
-        </div>
 
-        <div className="bloco-integrante">
-          <img src={Joao} alt="Foto de João" className="foto-integrante" />
-          <h3 className="nome-integrante">João Henrique Batista Leal - RM: 56436 - 1TDSPJ</h3>
-          <div className="links-integrante">
-            <a href="https://www.linkedin.com/in/jo%C3%A3o-leal-8ba769307/" target="_blank" className="link-social">LinkedIn</a>
-            <a href="https://github.com/JoaoHBatistaLeal" target="_blank" className="link-social">GitHub</a>
+          <div className="card-integrante">
+            <img src={Hector} alt="Foto de Hector" className="foto-integrante" />
+            <h2 className="nome-integrante">Hector Salgado Soria</h2>
+            <p className="descricao-integrante">RM: 565498 - 1TDSPJ</p>
+            <div className="links-integrante">
+              <a href="https://www.linkedin.com/in/hector-soria-76ab6726b/" target="_blank" className="link-social">LinkedIn</a>
+              <a href="https://github.com/Hectorsalgadoo" target="_blank" className="link-social">GitHub</a>
+            </div>
+          </div>
+
+          <div className="card-integrante">
+            <img src={Joao} alt="Foto de João" className="foto-integrante" />
+            <h2 className="nome-integrante">João Henrique Batista Leal</h2>
+            <p className="descricao-integrante">RM: 564361 - 1TDSPJ</p>
+            <div className="links-integrante">
+              <a href="https://www.linkedin.com/in/jo%C3%A3o-leal-8ba769307/" target="_blank" className="link-social">LinkedIn</a>
+              <a href="https://github.com/JoaoHBatistaLeal" target="_blank" className="link-social">GitHub</a>
+            </div>
           </div>
         </div>
       </section>

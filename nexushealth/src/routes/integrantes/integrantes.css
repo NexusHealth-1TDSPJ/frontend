@@ -21,15 +21,19 @@
 }
 
 .secao-equipe {
-  @apply max-w-5xl mx-auto;
+  @apply max-w-6xl mx-auto;
 }
 
 .titulo-equipe {
   @apply text-3xl font-semibold text-gray-900 text-center mb-12;
 }
 
-.bloco-integrante {
-  @apply flex flex-col items-center mb-12;
+.grade-integrantes {
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8;
+}
+
+.card-integrante {
+  @apply bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center;
 }
 
 .foto-integrante {
@@ -37,11 +41,15 @@
 }
 
 .nome-integrante {
-  @apply text-2xl font-medium text-gray-900 text-center;
+  @apply text-xl font-medium text-gray-900;
+}
+
+.descricao-integrante {
+  @apply text-sm text-gray-600 mb-2;
 }
 
 .links-integrante {
-  @apply flex space-x-4 mt-2;
+  @apply flex gap-4 mt-2;
 }
 
 .link-social {
