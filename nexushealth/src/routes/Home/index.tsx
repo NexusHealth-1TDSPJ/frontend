@@ -1,5 +1,5 @@
 import Reduzindo from "../../img/reduzindo-faltas.png";
-import Beneficios from "../../img/beneficios.jpeg";
+import Beneficios from "../../img/beneficios.png";
 import "./home.css";
 
 export default function Home() {
