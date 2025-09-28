@@ -19,7 +19,7 @@ export default function Perguntas() {
                     key={j}
                     pergunta={item.pergunta}
                     resposta={item.resposta}
-                    indice={i * 100 + j}
+                    indice={j}
                     ativo={ativo}
                     aoClicar={setAtivo}
                     />
