@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+
+    .fundo-pagina {
+    @apply bg-gray-50 py-8 px-4;
+    }
+
+    .titulo-principal {
+    @apply text-4xl font-bold text-center text-gray-900 mb-10;
+    }
+
+    .secao-servicos {
+    @apply max-w-5xl mx-auto space-y-12;
+    }
+
+    .subtitulo-servicos {
+    @apply text-3xl font-semibold text-gray-900;
+    }
+
+    .bloco-instituto {
+    @apply space-y-4;
+    }
+
+    .titulo-instituto {
+    @apply text-2xl font-semibold text-gray-800;
+    }
+
+    .texto-instituto {
+    @apply text-lg text-gray-700;
+    }

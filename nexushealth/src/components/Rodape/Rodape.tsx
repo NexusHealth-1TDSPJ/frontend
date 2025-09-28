@@ -1,7 +1,7 @@
 export default function Rodape() {
     return (
-        <footer>
-            <p>&copy; 2023 Nexus Health. Todos os direitos reservados.</p>
+        <footer className="rodape">
+            <p>&copy; 2025 Nexus Health. Todos os direitos reservados.</p>
         </footer>
     );
 }

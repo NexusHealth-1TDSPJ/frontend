@@ -1,0 +1,61 @@
+@import 'tailwindcss';
+
+.fundo-home {
+  @apply min-h-screen bg-gray-50 text-gray-800 px-6 py-12 max-w-7xl mx-auto;
+}
+
+.cabecalho-home {
+  @apply mb-12 text-center;
+}
+
+.titulo-home {
+  @apply text-4xl font-bold mb-4;
+}
+
+.texto-introducao {
+  @apply text-lg max-w-2xl mx-auto;
+}
+
+.secao-introducao {
+  @apply mb-16 flex flex-col md:flex-row items-center md:space-x-12;
+}
+
+.texto-intro {
+  @apply md:w-1/2;
+}
+
+.titulo-intro {
+  @apply text-3xl font-semibold mb-4;
+}
+
+.paragrafo-intro {
+  @apply text-lg;
+}
+
+.imagem-intro {
+  @apply w-full max-w-md mt-6 md:mt-0 rounded-lg shadow-lg;
+}
+
+.secao-diferenciacao {
+  @apply mb-16 max-w-3xl mx-auto text-center;
+}
+
+.titulo-diferenciacao {
+  @apply text-3xl font-semibold mb-6;
+}
+
+.paragrafo-diferenciacao {
+  @apply mb-4;
+}
+
+.secao-beneficios {
+  @apply mb-16 text-center;
+}
+
+.titulo-beneficios {
+  @apply text-3xl font-semibold mb-6;
+}
+
+.imagem-beneficios {
+  @apply w-full max-w-4xl mx-auto rounded-lg shadow-lg;
+}

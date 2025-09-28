@@ -14,23 +14,43 @@ Com uma interface interativa, o site permite que os usuários possam:
 
 ## Estrutura do Projeto
 ```
-├── nexushealth/
-    ├── public/               # Contém arquivos estáticos que não são processados pelo Vite.
-    │                         # Eles são copiados para a raiz do diretório de build.
-    │
-    ├── src/                  # Diretório principal do código-fonte da aplicação.
-    │   ├── assets/           # Imagens, fontes e outros recursos.
-    │   ├── components/       # Componentes React reutilizáveis.
-    │   ├── pages/            # Componentes que representam as páginas da aplicação.
-    │   └── main.tsx          # Ponto de entrada principal da aplicação React.
-    │
-    ├── .eslint.config.js     # Arquivo de configuração para o ESLint.
-    ├── .gitignore            # Especifica arquivos e pastas a serem ignorados pelo Git.
-    ├── index.html            # Ponto de entrada HTML da aplicação.
-    ├── package.json          # Define os metadados do projeto e as dependências.
-    ├── tsconfig.json         # Arquivo de configuração principal do TypeScript.
-    ├── vite.config.ts        # Arquivo de configuração do Vite.
-    └── README.md             # Documentação do projeto. 
+frontend
+│
+├── nexushealth
+│
+├── node_modules
+│
+├── public
+│
+└── src
+    ├── components
+    │   ├── Cabecalho
+    │   ├── Menu
+    │   ├── PerguntaItem
+    │   └── Rodape
+    ├── img
+    ├── data
+    ├── routes
+    │   ├── Contato
+    │   ├── Error
+    │   ├── Home
+    │   ├── Integrantes
+    │   ├── Perguntas
+    │   └── Servicos
+    │   └── Sobre
+    ├── App.tsx
+    ├── globals.css
+    ├── main.tsx
+    ├── vite-env.d.ts
+    ├── .gitignore
+    ├── eslint.config.js
+    ├── index.html
+    ├── package-lock.json
+    ├── package.json
+    ├── tsconfig.app.json
+    ├── tsconfig.json
+    ├── tsconfig.node.json
+    └── vite.config.ts
 ```
 
 ## Como rodar o projeto
@@ -52,6 +72,12 @@ npm install
 
 ```
 Este comando irá ler o arquivo package.json e baixar todas as bibliotecas listadas (como React, Vite, Tailwind CSS, etc.).
+
+Também instale o react-hook-form para a excecução correta de algumas funcionalidades
+
+```bash
+npm i react-hook-form
+```
 
 ### 3. Execute o Projeto
 
