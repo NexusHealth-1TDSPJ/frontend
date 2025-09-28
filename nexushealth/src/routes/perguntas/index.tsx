@@ -4,7 +4,7 @@ import PerguntaItem from "../../components/PerguntaItem/PerguntaItem";
 import "./perguntas.css";
 
 export default function Perguntas() {
-  const [ativo, setAtivo] = useState<number | null>(null);
+  const [ativo, setAtivo] = useState<{ grupo: number; item: number } | null>(null);
 
   return (
     <main className="fundo-perguntas">
@@ -19,9 +19,8 @@ export default function Perguntas() {
                     key={j}
                     pergunta={item.pergunta}
                     resposta={item.resposta}
-                    indice={j}
-                    ativo={ativo}
-                    aoClicar={setAtivo}
+                    estaAtivo={ativo?.grupo === i && ativo?.item === j}
+                    aoClicar={() => setAtivo({ grupo: i, item: j })}
                     />
                 ))}
                 </section>
