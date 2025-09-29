@@ -8,7 +8,6 @@ export default function Integrantes() {
 
   return (
     <main className="fundo-integrantes">
-      {/* Seção de introdução */}
       <section className="introducao-integrantes">
         <h1 className="titulo-introducao">Quem somos</h1>
         <div className="texto-introducao">
