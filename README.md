@@ -113,3 +113,6 @@ As tecnologias utilizadas no projeto foram:
 
 ## Link do repositório
 https://github.com/NexusHealth-1TDSPJ/frontend
+
+## Link do vídeo do Youtube
+https://youtu.be/dj7De78I6n0
