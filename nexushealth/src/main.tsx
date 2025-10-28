@@ -11,6 +11,7 @@ import Servicos from './routes/Servicos/index.tsx'
 import Perguntas from './routes/Perguntas/index.tsx'
 import Integrantes from './routes/Integrantes/index.tsx'
 import Contato from './routes/Contato/index.tsx'
+import Login from './routes/login/index.tsx'
 
 
 
@@ -22,7 +23,8 @@ const router = createBrowserRouter([
       {path:"/servicos", element: <Servicos/>},
       {path:"/perguntas", element: <Perguntas/>},
       {path:"/integrantes", element:<Integrantes/>},
-      {path:"/contato", element:<Contato/>}
+      {path:"/contato", element:<Contato/>},
+      {path:"/login", element:<Login/>}
     ]
   } 
 ])
