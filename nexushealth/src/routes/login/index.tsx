@@ -10,7 +10,7 @@ export default function Login() {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => {
+  const onSubmit = (data: any) => {
     console.log("Login realizado com:", data);
   };
 
@@ -43,7 +43,7 @@ export default function Login() {
               placeholder="Digite seu e-mail"
             />
             {errors.email && (
-              <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>
+              <p className="text-red-500 text-sm mt-1">{errors.email.message as string}</p>
             )}
           </div>
 
@@ -64,7 +64,7 @@ export default function Login() {
               placeholder="Digite sua senha"
             />
             {errors.senha && (
-              <p className="text-red-500 text-sm mt-1">{errors.senha.message}</p>
+              <p className="text-red-500 text-sm mt-1">{errors.senha.message as string}</p>
             )}
           </div>
 

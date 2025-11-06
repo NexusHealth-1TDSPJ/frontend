@@ -4,37 +4,4 @@
   body {
     @apply bg-slate-50 text-slate-800 overflow-x-hidden;
   }
-
-  .cabecalho {
-    @apply w-full bg-[#a2ffe9] text-slate-900 flex flex-wrap justify-between items-center 
-           py-4 px-4 sm:px-6 md:px-8 lg:px-16 z-20 relative shadow-sm;
-  }
-
-  .logo {
-    @apply text-2xl font-bold tracking-tight;
-  }
-  .menu-nav {
-    @apply hidden fixed top-0 left-0 w-full h-screen bg-[#a2ffe9] z-10
-           flex-col justify-center items-center gap-6 transition-all duration-300 ease-in-out;
-
-    @apply sm:gap-6 md:flex md:flex-row md:static md:w-auto md:h-auto 
-           md:bg-transparent md:gap-4 md:items-center;
-  }
-
-  .menu-link {
-    @apply w-4/5 max-w-xs text-center text-lg py-4 text-slate-700 hover:text-white 
-           hover:bg-[#a2ffe9] border-b border-slate-300 focus-visible:outline-none 
-           focus-visible:ring-2 focus-visible:ring-white;
-
-    &:last-child {
-      @apply border-b-0;
-    }
-
-    @apply md:w-auto md:border-b-0 md:px-4 md:py-2 md:rounded-md 
-           md:text-sm md:font-medium md:hover:bg-[#a2ffe9] md:transition-colors;
-  }
-  .rodape {
-    @apply bg-[#a2ffe9] text-slate-900 flex justify-center items-center 
-           w-full h-[50px] mt-auto text-center px-4 text-sm;
-  }
 }

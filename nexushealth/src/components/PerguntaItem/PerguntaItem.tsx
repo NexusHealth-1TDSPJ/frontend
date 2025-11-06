@@ -1,5 +1,3 @@
-import "../../routes/Perguntas/perguntas.css";
-
 interface PerguntaItemProps {
   pergunta: string;
   resposta: string;
@@ -9,17 +7,19 @@ interface PerguntaItemProps {
 
 export default function PerguntaItem({ pergunta, resposta, estaAtivo, aoClicar }: PerguntaItemProps) {
   return (
-    <div className="bloco-pergunta">
+    <div className="mb-4">
       <button
-        className={`item-pergunta ${estaAtivo ? "ativo" : ""}`}
+        className={`bg-blue-600 text-white px-6 py-4 mb-2 rounded-lg cursor-pointer hover:bg-[#a2ffe9] transition duration-300 ${
+          estaAtivo ? "ring-2 ring-blue-300" : ""
+        }`}
         onClick={aoClicar}
         aria-expanded={estaAtivo}
       >
-        <span className="texto-pergunta">{pergunta}</span>
+        <span className="font-semibold">{pergunta}</span>
       </button>
 
       {estaAtivo && (
-        <div className="resposta-pergunta">
+        <div className="bg-white text-black px-6 py-4 rounded-lg mb-2">
           {resposta}
         </div>
       )}

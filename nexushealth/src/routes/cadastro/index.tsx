@@ -11,7 +11,7 @@ export default function Cadastro() {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => {
+  const onSubmit = (data: any) => {
     console.log("Dados enviados:", data);
   };
     const senha = watch("senha", "");
@@ -118,7 +118,7 @@ export default function Cadastro() {
         <p className="text-center text-sm text-gray-600 mt-4">
           Já tem uma conta?{" "}
           <Link to="/login" className="text-blue-600 font-medium hover:underline">
-            Voltar para o login
+            Ir para o login
           </Link>
         </p>
       </div>
