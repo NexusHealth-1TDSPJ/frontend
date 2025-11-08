@@ -35,7 +35,7 @@ export default function Login() {
   return (
     <main className="min-h-screen flex items-center justify-center">
       <div className="bg-white shadow-2xl rounded-2xl p-8 w-full max-w-md">
-        <h1 className="text-3xl font-bold text-center text-blue-700 mb-6">Entrar</h1>
+        <h1 className="text-3xl font-bold text-center text-[#a2ffe9] mb-6">Entrar</h1>
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
           <div>
             <label className="block text-sm font-medium text-gray-700">CPF</label>
@@ -84,7 +84,7 @@ export default function Login() {
               </p>)}
           </div>
 
-          <button type="submit"className="w-full bg-[#a2ffe9] text-black text-extrabold py-2 rounded-lg hover:bg-[#0099ff] transition">Entrar</button>
+          <button type="submit"className="w-full bg-[#a2ffe9] text-black font-bold py-2 rounded-lg hover:bg-[#0099ff] transition">Entrar</button>
         </form>
 
         <p className="text-center text-sm text-gray-600 mt-4">

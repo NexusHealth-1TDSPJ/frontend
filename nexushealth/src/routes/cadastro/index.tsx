@@ -149,7 +149,7 @@ export default function Cadastro() {
             {errors.confirmarSenha && <p className="text-red-500 text-sm mt-1">{errors.confirmarSenha.message}</p>}
             </div>
           </div>
-          <button type="submit" className="w-full bg-[#a2ffe9] text-black text-extrabold py-2 rounded-lg hover:bg-[#0099ff] transition">Cadastrar</button>
+          <button type="submit" className="w-full bg-[#a2ffe9] text-black font-bold py-2 rounded-lg hover:bg-[#0099ff] transition">Cadastrar</button>
         </form>
         <p className="text-center text-sm text-gray-600 mt-4">
           Já tem uma conta?{" "}
