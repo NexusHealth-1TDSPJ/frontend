@@ -42,7 +42,7 @@ export default function Cabecalho() {
           <div className="flex items-center gap-2">
             <span className="font-medium">{primeiroNome}</span>
             <button
-              onClick={() => navigate("/editar-paciente")}
+              onClick={() => navigate("/editar-usuario")}
               className="text-slate-900 hover:text-slate-700"><HiOutlineUserCircle size={28} />
             </button>
           </div>)}

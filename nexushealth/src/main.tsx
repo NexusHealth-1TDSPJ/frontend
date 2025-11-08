@@ -10,6 +10,7 @@ import Perguntas from "./routes/Perguntas/index.tsx";
 import Integrantes from "./routes/Integrantes/index.tsx";
 import Login from "./routes/Login/index.tsx";
 import Cadastro from "./routes/Cadastro/index.tsx";
+import EditarUsuario from "./routes/EditarUsuario/index.tsx";
 import { Navigate } from "react-router-dom";
 // @ts-ignore
 import "./globals.css";
@@ -66,6 +67,14 @@ const router = createBrowserRouter([
         element: (
           <RotaPrivada>
             <Integrantes />
+          </RotaPrivada>
+        ),
+      },
+      {
+        path: "/editar-usuario",
+        element: (
+          <RotaPrivada>
+            <EditarUsuario />
           </RotaPrivada>
         ),
       },
