@@ -14,8 +14,7 @@ export default function Login() {
   const {
     register,
     handleSubmit,
-    formState: { errors },
-  } = useForm<EntradaDeLogin>();
+    formState: { errors },} = useForm<EntradaDeLogin>();
 
   const [mostrarSenha, setMostrarSenha] = useState(false);
 
@@ -25,53 +24,38 @@ export default function Login() {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
-      });
+        },body: JSON.stringify(data),});
 
       if (!response.ok) {
-        throw new Error("Erro ao fazer login");
-      }
+        throw new Error("Erro ao fazer login");}
       const result = await response.json();
       localStorage.setItem("token", result.token);
-    } catch (error) {
-    }
-  };
+    }catch (error) {}};
 
   return (
-    <main className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-100 to-blue-300">
+    <main className="min-h-screen flex items-center justify-center">
       <div className="bg-white shadow-2xl rounded-2xl p-8 w-full max-w-md">
-        <h1 className="text-3xl font-bold text-center text-blue-700 mb-6">
-          Entrar
-        </h1>
-
+        <h1 className="text-3xl font-bold text-center text-[#a2ffe9] mb-6">Entrar</h1>
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
           <div>
-            <label className="block text-sm font-medium text-gray-700">
-              CPF
-            </label>
+            <label className="block text-sm font-medium text-gray-700">CPF</label>
             <input
               type="text"
               {...register("cpf", {
                 required: "O CPF é obrigatório",
                 pattern: {
                   value: /^[0-9]{11}$/,
-                  message: "Digite um CPF válido (somente números)",
-                },
-              })}
+                  message: "Digite um CPF válido (somente números)",},})}
               className={`w-full mt-1 p-2 border rounded-lg focus:outline-none focus:ring-2 ${
                 errors.cpf
                   ? "border-red-500 focus:ring-red-500"
-                  : "border-gray-300 focus:ring-blue-500"
-              }`}
+                  : "border-gray-300 focus:ring-blue-500"}`}
               placeholder="Digite seu CPF"
-              maxLength={11}
-            />
+              maxLength={11}/>
             {errors.cpf && (
               <p className="text-red-500 text-sm mt-1">
                 {errors.cpf.message as string}
-              </p>
-            )}
+              </p>)}
           </div>
 
           <div>
@@ -82,15 +66,11 @@ export default function Login() {
               <input
                 type={mostrarSenha ? "text" : "password"}
                 {...register("senha", {
-                  required: "A senha é obrigatória",
-                })}
+                  required: "A senha é obrigatória",})}
                 className={`w-full mt-1 p-2 border rounded-lg focus:outline-none focus:ring-2 ${
                   errors.senha
                     ? "border-red-500 focus:ring-red-500"
-                    : "border-gray-300 focus:ring-blue-500"
-                }`}
-                placeholder="Digite sua senha"
-              />
+                    : "border-gray-300 focus:ring-blue-500"}`}placeholder="Digite sua senha"/>
               <button
                 type="button"
                 onClick={() => setMostrarSenha(!mostrarSenha)}
@@ -101,26 +81,15 @@ export default function Login() {
             {errors.senha && (
               <p className="text-red-500 text-sm mt-1">
                 {errors.senha.message as string}
-              </p>
-            )}
+              </p>)}
           </div>
 
-          <button
-            type="submit"
-            className="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition"
-          >
-            Entrar
-          </button>
+          <button type="submit"className="w-full bg-[#a2ffe9] text-black font-bold py-2 rounded-lg hover:bg-[#0099ff] transition">Entrar</button>
         </form>
 
         <p className="text-center text-sm text-gray-600 mt-4">
           Ainda não tem uma conta?{" "}
-          <Link
-            to="/cadastro"
-            className="text-blue-600 font-medium hover:underline"
-          >
-            Criar conta
-          </Link>
+          <Link to="/cadastro" className="text-blue-600 font-medium hover:underline">Criar conta</Link>
         </p>
       </div>
     </main>
