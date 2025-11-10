@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom"; // Importei o useNavigate
+import { Link, useNavigate } from "react-router-dom";
 import { useForm, type SubmitHandler } from "react-hook-form";
 import { useState } from "react";
 import { GoEye, GoEyeClosed } from "react-icons/go";
@@ -43,10 +43,10 @@ export default function Cadastro() {
     };
 
     try {
-      const response = await fetch("https://java-hc-4.onrender.com/pacientes", {
+      const response = await fetch("https://java-hc-4.onrender.com/paciente", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(backendPayload), // Envia o payload mapeado
+        body: JSON.stringify(backendPayload),
       });
 
       if (!response.ok) {
