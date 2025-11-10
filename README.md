@@ -23,37 +23,38 @@ frontend
 ├── public
 │
 └── src
-    ├── components
-    │   ├── Cabecalho
-    │   ├── Menu
-    │   ├── PerguntaItem
-    │   └── Rodape
-    ├── img
-    ├── data
-    ├── routes
-    │   ├── Contato
-    │   ├── Error
-    │   ├── Home
-    │   ├── Integrantes
-    │   ├── Perguntas
-    │   └── Servicos
-    │   └── Sobre
-    ├── App.tsx
-    ├── globals.css
-    ├── main.tsx
-    ├── vite-env.d.ts
-    ├── .gitignore
-    ├── eslint.config.js
-    ├── index.html
-    ├── package-lock.json
-    ├── package.json
-    ├── tsconfig.app.json
-    ├── tsconfig.json
-    ├── tsconfig.node.json
-    └── vite.config.ts
+│    ├── components
+│    │   ├── Cabecalho
+│    │   ├── Menu
+│    │   ├── PerguntaItem
+│    │   └── Rodape
+│    ├── img
+│    ├── data
+│    ├── routes
+│    │   ├── Contato
+│    │   ├── Error
+│    │   ├── Home
+│    │   ├── Integrantes
+│    │   ├── Perguntas
+│    │   └── Servicos
+│    │   └── Sobre
+│    ├── App.tsx
+│    ├── globals.css
+│    └── main.tsx
+│
+├── vite-env.d.ts
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package-lock.json
+├── package.json
+├── tsconfig.app.json
+├── tsconfig.json
+├── tsconfig.node.json
+└── vite.config.ts
 ```
 
-## Como rodar o projeto
+## Como rodar o projeto (ambiente de dev)
 
 ### 1. Clone o Repositório
 
@@ -61,8 +62,7 @@ Primeiro, clone este repositório para o seu ambiente local usando o terminal:
 
 ```bash
 git clone https://github.com/NexusHealth-1TDSPJ/frontend.git
-cd frontend
-cd nexushealth
+cd frontend/nexushealth
 ```
 ### 2. Instale as dependências do projeto
 Dentro da pasta do projeto, instale todas as dependências necessárias utilizando o npm (ou o seu gerenciador de pacotes preferido):
@@ -97,6 +97,36 @@ http://localhost:5173
 
 Abra o seu navegador e acesse essa URL para ver o projeto em execução!
 
+## Como rodar o projeto (ambiente de prod)
+
+cole o seguinte link no seu navegador de preferência
+
+```bash
+https://nexushealth.vercel.app/
+```
+
+caso queira visitar a api 
+
+```bash
+https://java-hc-4.onrender.com/
+```
+
+tabela de endpoints
+
+```
+| Método HTTP | Endpoint (URI) | Descrição | Corpo da Requisição | Códigos de Resposta Esperados |
+| GET | /profissionais | Lista todos os profissionais cadastrados | - | 200 OK → Lista retornada  500 Internal Server Error → Erro interno ao listar |
+| GET | /consultas | Lista todos os consultas cadastrados | - | 200 OK → Lista retornada  500 Internal Server Error → Erro interno ao listar |
+| GET | /paciente | Lista todos os pacientes cadastrados | — | 200 OK → Lista retornada  500 Internal Server Error → Erro interno ao listar |
+| GET | /paciente/{id} | Busca um paciente pelo ID | — | 200 OK → Paciente encontrado  400 Bad Request → ID inválido  404 Not Found → Paciente não encontrado  500 Internal Server Error → Erro interno |
+| GET | /paciente/cpf/{cpf} | Busca um paciente pelo CPF | — | 200 OK → Paciente encontrado  400 Bad Request → CPF inválido  404 Not Found → Paciente não encontrado  500 Internal Server Error → Erro interno |
+| POST | /paciente | Cadastra um novo paciente | JSON com os dados do paciente | 201 E Created → Paciente criado com sucesso  400 Bad Request → Dados inválidos  409 Conflict → CPF já cadastrado  500 Internal Server Error → Erro interno |
+| PUT | /paciente/{id} | Atualiza um paciente existente pelo ID | JSON com os dados atualizados | 200 OK → Paciente atualizado  400 Bad Request → Dados inválidos  404 Not Found → Paciente não encontrado  409 Conflict → CPF duplicado  500 Internal Server Error → Erro interno |
+| DELETE | /paciente/{id} | Exclui um paciente pelo ID | — | 204 No Content → Paciente excluído com sucesso  400 Bad Request → ID inválido  404 Not Found → Paciente não encontrado  409 Conflict → Restrição de chave estrangeira  500 Internal Server Error → Erro interno |
+
+ 
+```
+
 ## Tecnologias Utilizadas
 As tecnologias utilizadas no projeto foram: 
 
@@ -105,6 +135,8 @@ As tecnologias utilizadas no projeto foram:
 ![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+
 
 ## Integrantes do projeto
 - Erik Naoki Miyasato - RM: 565771 | 1TDSPJ
@@ -113,6 +145,3 @@ As tecnologias utilizadas no projeto foram:
 
 ## Link do repositório
 https://github.com/NexusHealth-1TDSPJ/frontend
-
-## Link do vídeo do Youtube
-https://youtu.be/dj7De78I6n0

@@ -1,4 +1,4 @@
-import { StrictMode} from "react";
+import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App.tsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -11,18 +11,8 @@ import Integrantes from "./routes/Integrantes/index.tsx";
 import Login from "./routes/Login/index.tsx";
 import Cadastro from "./routes/Cadastro/index.tsx";
 import EditarUsuario from "./routes/EditarUsuario/index.tsx";
-import { Navigate } from "react-router-dom";
 // @ts-ignore
 import "./globals.css";
-
-interface RotaPrivadaProps {
-  children: React.ReactElement;
-}
-
-function RotaPrivada({ children }: RotaPrivadaProps) {
-  const token = localStorage.getItem("token"); // corrigir na hora de usar com o java
-  return token ? children : <Navigate to="/login" replace />;
-}
 
 const router = createBrowserRouter([
   {
@@ -32,51 +22,27 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: (
-          <RotaPrivada>
-            <Home />
-          </RotaPrivada>
-        ),
+        element: <Home />,
       },
       {
         path: "/sobre",
-        element: (
-          <RotaPrivada>
-            <Sobre />
-          </RotaPrivada>
-        ),
+        element: <Sobre />,
       },
       {
         path: "/servicos",
-        element: (
-          <RotaPrivada>
-            <Servicos />
-          </RotaPrivada>
-        ),
+        element: <Servicos />,
       },
       {
         path: "/perguntas",
-        element: (
-          <RotaPrivada>
-            <Perguntas />
-          </RotaPrivada>
-        ),
+        element: <Perguntas />,
       },
       {
         path: "/integrantes",
-        element: (
-          <RotaPrivada>
-            <Integrantes />
-          </RotaPrivada>
-        ),
+        element: <Integrantes />,
       },
       {
         path: "/editar-usuario",
-        element: (
-          <RotaPrivada>
-            <EditarUsuario />
-          </RotaPrivada>
-        ),
+        element: <EditarUsuario />,
       },
       { path: "/login", element: <Login /> },
       { path: "/cadastro", element: <Cadastro /> },
